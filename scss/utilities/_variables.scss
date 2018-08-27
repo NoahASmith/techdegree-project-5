@@ -16,11 +16,30 @@ $c-info: #927bc1;
 
 //Grid Colors
 
-$g-color-12: #80e8d1;
-$g-color-6: #3fabca;
-$g-color-4: #7ee6fd;
-$g-color-3: #deb2ee;
-$g-color-5: #88d9a0;
-$g-color-7: #ec9fa3;
-$g-color-8: #fd9f85;
+$grid-colors: (
+	default: $c-secondary,
+	success: #63cc82,
+	error: #e4757a,
+	warning: #fd7856,
+	info: #927bc1
+);
 
+//Breakpoints
+$breakpnt-sm: 1px;
+$breakpnt-md: 768px;
+$breakpnt-lg: 1100px;
+
+
+
+//Font Size
+$base__font-size: 16px;
+$base__line: 24px;
+$letter-space: 1px;
+
+
+//Font Weight
+$font-weight-thin: 100;
+$font-weight-light: 300;
+$font-weight-medium: 400;
+$font-weight-bold: 700;
+$font-weight-ultra-bold: 900;
