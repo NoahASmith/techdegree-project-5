@@ -5,9 +5,12 @@
 }
 
 ul {
-	
+	list-style: none;
 }
 
 p {
-	
+	font-size: $base__font-size;
+	line-height: em(20px);
+	font-weight: $font-weight-medium
 }
+
