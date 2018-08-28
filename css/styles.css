@@ -1,4 +1,10 @@
 /* CSS Document */
+/*
+For Colors
+*/
+/*
+For Grids
+*/
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -305,3 +311,27 @@ END OF NORMALIZE CSS
 */
 * {
   box-sizing: border-box; }
+
+/* CSS Document */
+.grid__col--2 {
+  width: 15%; }
+.grid__col--3 {
+  width: 23.5%; }
+.grid__col--4 {
+  width: 32%; }
+.grid__col--5 {
+  width: 40.5%; }
+.grid__col--6 {
+  width: 49%; }
+.grid__col--7 {
+  width: 57.5%; }
+.grid__col--8 {
+  width: 66%; }
+.grid__col--9 {
+  width: 74.5%; }
+.grid__col--10 {
+  width: 83%; }
+.grid__col--11 {
+  width: 91.5%; }
+.grid__col--12 {
+  width: 100%; }

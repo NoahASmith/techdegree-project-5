@@ -1,0 +1,25 @@
+
+//Grid maker
+
+@mixin g-columns {
+  @for $i from 2 through $g-col-count {
+    $context: g-context($g-col-width, $g-col-count ,$g-gutter-width) !global;  
+    $target: ($g-col-width * $i) + ($g-gutter-width * ($i - 1));
+    
+    // Generate column modifier classes
+    &--#{$i} {
+      width: percentage($target / $context);
+    }
+  }
+}  
+
+
+//Flex
+
+@mixin flex ($display: flex, $dir: null, $wrap: null, $just: null){
+    display: $display;
+    flex-direction: $dir;
+    flex-wrap: $wrap;
+    justify-content: $just;
+    @content;
+}
