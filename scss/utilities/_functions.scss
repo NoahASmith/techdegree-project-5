@@ -7,17 +7,8 @@
 }
 
 
-<<<<<<< HEAD
 //Grid Context
 @function g-context($g-col-width, $g-col-count, $g-gutter-width) {
 	$g-context : ($g-col-width * $g-col-count) +  ($g-gutter-width * ($g-col-count - 1));
 	@return $g-context;
 }
-
-=======
-
-@function g-context($g-col-width, $g-col-count, $g-gutter-width) {$g-context: ($g-col-width * $g-col-count) + ($g-gutter-width * ($g-col-count - 1));
-	@return $g-context;
-
-}
->>>>>>> 02db1f5f5fa813b906f58bde1020ef033f9d04e5

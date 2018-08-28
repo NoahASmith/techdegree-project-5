@@ -312,6 +312,14 @@ END OF NORMALIZE CSS
 * {
   box-sizing: border-box; }
 
+ul {
+  list-style: none; }
+
+p {
+  font-size: 16px;
+  line-height: 1.25em;
+  font-weight: 400; }
+
 /* CSS Document */
 .grid__col--2 {
   width: 15%; }
