@@ -11,6 +11,14 @@ ul {
 p {
 	font-size: $base__font-size;
 	line-height: em(20px);
-	font-weight: $font-weight-medium
+	font-weight: $font-weight--medium
 }
 
+.container {
+	font-family: $font-family--primary;
+	padding: 1em;
+	@include mq(medium){
+		max-width: 1000px;
+		margin: 1em auto;
+	}
+}

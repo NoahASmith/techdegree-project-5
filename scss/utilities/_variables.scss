@@ -6,6 +6,9 @@ For Colors
 //Colors
 $c-primary: #58e1c1;
 $c-secondary: #51ddfc;
+$white: #fff;
+$gray: #444;
+$black: #000;
 
 //Button Colors
 
@@ -17,34 +20,25 @@ $btn-color : (
 	info: #927bc1
 );
 
-
-//Grid Colors
-$g-color-3: #deb2ee;
-$g-color-4: #7ee6fd;
-$g-color-5: #88d9a0;
-$g-color-6: #3fabca;
-$g-color-7: #ec9fa3;
-$g-color-8: #fd9f85;
-$g-color-12: #80e8d1;
-
-
 /*
 For Grids
 */
 
 //Grid
 $g-col-width    : 65px;
-$g-gutter-width : 20px;
+$g-gutter-width : 15px;
 $g-col-count    : 12;
 $g-cont-max-w   : 1050px;
 
 
 $grid-colors: (
-	default: $c-secondary,
-	success: #63cc82,
-	error: #e4757a,
-	warning: #fd7856,
-	info: #927bc1
+	12: $c-secondary,
+	6: #63cc82,
+	4: #e4757a,
+	3: #fd7856,
+	5: #927bc1,
+	7: #52bab3,
+	8: #eeff23
 );
 
 //btn
@@ -63,6 +57,7 @@ $breakpnt-sm: 1px;
 $breakpnt-md: 768px;
 $breakpnt-lg: 1100px;
 
+$breakpnt-mobile: 481px;
 
 
 //Font Size
@@ -72,8 +67,13 @@ $letter-space: 1px;
 
 
 //Font Weight
-$font-weight-thin: 100;
-$font-weight-light: 300;
-$font-weight-medium: 400;
-$font-weight-bold: 700;
-$font-weight-ultra-bold: 900;
+$font-weight--thin: 100;
+$font-weight--light: 300;
+$font-weight--medium: 400;
+$font-weight--bold: 700;
+$font-weight--ultra-bold: 900;
+
+//Fonts
+$font-url--google: 'https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,400i,600,700,800,900';
+$font-family--primary: 'Raleway', Helvetica, Arial, 'Helvetica Neue', sans-serif;
+

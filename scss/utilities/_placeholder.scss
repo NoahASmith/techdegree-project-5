@@ -1,0 +1,114 @@
+//clearfix
+
+%clearfix {
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+
+//srt
+
+.srt {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+// align center
+
+%center-align {
+	text-align: center;
+}
+
+// element center
+
+.centered {
+	float: none;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+//btn
+
+%btn {
+	padding: 15px 30px;
+	border: 0;
+	border-radius: 5px;
+	color: $white;
+	text-transform: uppercase;
+	font-size: em(14px);
+	font-weight: $font-weight--bold;
+	transition: opacity 1s;
+	display: block;
+	&:hover {
+		opacity: .5;
+		cursor: pointer;
+	}
+	&:active {
+		opacity: .33;
+	}
+}
+
+
+//Links
+
+%links {
+	font-weight: $font-weight--bold;
+	text-decoration: none;
+	color: $c-secondary;
+}
+
+//nav
+
+%nav-item-display {
+	display:block;
+	border-radius: 5px;
+	width: 100%;
+	margin: 0;
+}
+
+%nav-item-link {
+	text-decoration: none;
+	font-size: em(18px);
+	font-weight: $font-weight--light;
+	display: block;
+	padding: em(12px, 18px);
+	border-radius: 5px;
+}
+
+%nav-item-on {
+	color: $white;
+	background-color: $c-primary;
+}
+
+
+//headline
+%headlines {
+	font-weight: $font-weight--medium;
+	color: $gray;
+	margin: 0;
+}
+
+// img
+%img-display {
+	display: block;
+	margin: 1em auto;
+}
+
+
+
+
+
+
+
+
+
+

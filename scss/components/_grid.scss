@@ -1,5 +1,36 @@
 
-.grid__col { 
-	@include g-columns;
+.grid {
+	
+	@include e(row){
+		display: block;
+		padding: .5em;
+		margin-bottom: 1em;
+		@include mq(medium) {
+			@include flexbox(flex, row, wrap, space-between);
+			
+		}
+	}
+	@include e(col) {
+		@include bg-colors ($grid-colors);
+		@include mq(medium){
+			@include g-columns();
+		}
+	}
 }
 
+[class^="grid__col--"] {
+	padding: .75em .5em;
+	border: 0;
+	border-radius: 5px;
+	color: $gray;
+	font-weight: $font-weight--bold;
+	@include mq(medium){
+		@include flexbox($just: spacearound);
+	}
+}
+
+.grid__col--9 {
+	nav {
+		margin: 0 5% 0 auto;
+	}
+}

@@ -1,2 +1,26 @@
 /* CSS Document */
 
+.form {
+	@include e(label) {
+		@include m(hidden) {
+			@extend .srt;
+		}
+	}
+	@include mq(medium){
+		width: 100%;
+	}
+	@include e(input) {
+		display: block;
+		width: 90%;
+		padding: .75em;
+		margin: 0 auto em(24px, 18px);
+		border: none;
+		border-bottom: 6px solid $c-primary;
+		font-size: em(16px);
+		font-weight: $font-weight--bold;
+	
+	&:focus {
+		outline: none;
+		}
+	}
+}

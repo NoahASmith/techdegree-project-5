@@ -7,20 +7,17 @@
     .theme__colors
 */
 
-$theme__colors {
-	@include $btn-color;
+.btn {
+	@include bg-colors($btn-colors);
 }
 
 [class^="btn--"] {
   @extend %center-align;
   @extend %btn;
-  margin-bottom: em(20px, 14px); 
-  @media (min-width: 1px) and (max-width: 768px) {
-  	width: 100%;
-  }
-  @media (min-width: 769px) { 
-    width: auto;
-    display: inline-block;
-    @include doubly(20px);
-  }
+  margin-bottom: em(20px, 15px); 
+	width: 100%;
+	@include mq(medium){
+		dipslay: inline-block;
+		@include doubly(50px)
+	}
 }

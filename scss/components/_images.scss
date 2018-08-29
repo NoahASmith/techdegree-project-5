@@ -1,2 +1,22 @@
 /* CSS Document */
 
+.img {
+	@include m(frame) {
+		@extend %img-display;
+		border: 1px solid $gray;
+		padding: .5em;
+		width: 100%;
+		@include mq(medium){
+			width: 410px;
+			height: 200px;
+		}
+	}
+	@include m(avatar) {
+		@extend %img-display;
+		width: 199px;
+		height: 199px;
+	}
+	@include m(logo){
+		@extend %img-display;
+	}
+}

@@ -1,3 +1,16 @@
+//BEM
+
+@mixin e($element) {
+	&__#{$element} {
+		@content;
+	}
+}
+@mixin m($modifier) {
+	&--#{$modifier} {
+		@content;
+	}
+}
+
 
 //Grid maker
 
@@ -14,6 +27,16 @@
 }  
 
 
+
+//Colors
+@mixin bg-colors($map) {
+	@each $theme, $color in $map {
+		&--#{$theme}.theme__colors {
+			background-color: $color;
+		}
+	}
+}
+
 //Flex
 
 @mixin flex ($display: flex, $dir: null, $wrap: null, $just: null){
@@ -23,3 +46,45 @@
     justify-content: $just;
     @content;
 }
+
+@mixin doubly($margin: 1em) {
+	& + & {
+		margin-left: $margin;
+		@content;
+	}
+}
+
+//MQ
+
+@mixin mq($break) {
+	@if $break == "small" {
+		@media (min-width: $breakpnt-sm) and (max-width: $breakpnt-md) {
+			@content;
+		}
+	}
+	@else if $break == "medium" {
+		@media (min-width: $breakpnt-md + 1){
+			@content;
+		}
+	}
+	@else if $break == "large" {
+		@media (min-width: $breakpnt-lg + 1){
+			@content;
+		}
+	}
+	@else {
+		@error "Make sure to use small, medium, or large for the '#{$break}'"
+	}
+}
+
+
+// Flex
+
+@mixin flexbox($disp: flex, $dir: null, $wrap: null, $just: null){
+	display: $disp;
+	flex-direction: $dir;
+	flex-wrap: $wrap;
+	justify-content: $just;
+		@content;
+}
+

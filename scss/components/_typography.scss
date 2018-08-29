@@ -11,3 +11,28 @@
 .headline-secondary
 
 */
+
+
+.link {
+	@extend %links;
+}
+
+.blockquote {
+	padding: 0 0 0 5%;
+	border-right: 5px;
+	border-left: em(5px, 25px) solid $c-primary;
+	font-weight: $font-weight--medium;
+	font-style: italic;
+	font-size: em(25px);
+}
+
+.headline{
+	@include m(primary) {
+		color: $c-primary;
+		font-weight: $font-weight--bold;
+		margin-left: 1em;
+	}
+	@include m(secondary) {
+		@extend %headlines;
+	}
+}
